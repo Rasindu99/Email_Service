@@ -2,12 +2,12 @@ const nodemailer = require("nodemailer");
 
 //Nodemailer configuration
 const transporter = nodemailer.createTransport({
-  host: 'mxslurp.click',
-  port: '2525',
+  host:  'smtp.office365.com',
+  port: '587',
   secure: false, // // true for 465, false for other ports
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: 'kumzitseverywhere@kumzits.com',
+    pass: 'gV2rw2RE8rAK9Mc',
   },
   tls: {
     rejectUnauthorized: false,
